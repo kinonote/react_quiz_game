@@ -1,3 +1,5 @@
+import { Button } from "react-bootstrap";
+
 const QuizButton = () => {
   const onClickb = () => {
     alert();
@@ -5,18 +7,18 @@ const QuizButton = () => {
   return (
     <div className="App">
       <div class="d-flex justify-content-center">
-        <button onClick={onClickb} type="button" class="btn btn-primary">
+        <Button variant="primary" className="ml-1" onClick={onClickb}>
           選択肢1
-        </button>
-        <button type="button" class="ml-1 btn btn-primary">
+        </Button>
+        <Button variant="primary" className="ml-1">
           選択肢2
-        </button>
-        <button type="button" class="ml-1 btn btn-primary">
+        </Button>
+        <Button variant="primary" className="ml-1">
           選択肢3
-        </button>
-        <button type="button" class="ml-1 btn btn-primary">
+        </Button>
+        <Button variant="primary" className="ml-1">
           選択肢4
-        </button>
+        </Button>
       </div>
     </div>
   );
