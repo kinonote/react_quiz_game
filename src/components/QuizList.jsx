@@ -1,16 +1,11 @@
-import { useState } from "react";
 import "../App.css";
 
-const QuizList = () => {
-  const onClickb2 = () => {
-    alert();
-  };
-  const [quiz, setQuiz] = useState(100);
-
+export const QuizList = (props) => {
   return (
-    <div className="App">
-      <h1>テスト</h1>
-      <button onClick={onClickb2}>{quiz}</button>
+    <div className="container">
+      <div id="js-question" className="alert alert-primary " role="alert">
+        ドラえもんクイズ！ React ver1.0
+      </div>
     </div>
   );
 };

@@ -1,13 +1,14 @@
 import { Button } from "react-bootstrap";
 
-const QuizButton = () => {
-  const onClickb = () => {
-    alert();
-  };
+const QuizButton = (props) => {
+  // const onClickb = () => {
+  //   alert();
+  // };
+
   return (
     <div className="App">
       <div class="d-flex justify-content-center">
-        <Button variant="primary" className="ml-1" onClick={onClickb}>
+        <Button variant="primary" className="ml-1">
           選択肢1
         </Button>
         <Button variant="primary" className="ml-1">
